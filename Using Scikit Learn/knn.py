@@ -34,7 +34,10 @@ if __name__ == '__main__':
     y_test = data_test[b'labels']
     # Call kNN
     k = int(input("Enter the value of k for k-Nearest Neighbor Classifier: "))
+    print("Computation under process")
+    print("Please Wait...")
     knn = KNeighborsClassifier(n_neighbors=k)
     knn.fit(X_train, y_train)
     Yte_predict = knn.predict(X_test)
-    print('accuracy: {:.2f}' .format(knn.score(X_test, y_test)))
+    print("Prediction complete")
+    print('The accuracy of classifier on test data: {:.2f}' .format((knn.score(X_test, y_test)*100)))
