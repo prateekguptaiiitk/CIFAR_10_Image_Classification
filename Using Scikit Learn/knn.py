@@ -25,7 +25,7 @@ def getCIFAR10(direc, filename, batches):
     return X_train, y_train
 
 if __name__ == '__main__':
-    direc = 'data/'
+    direc = '../data/'
     test_file = 'test_batch'
     filename = 'data_batch_'
     X_train, y_train = getCIFAR10(direc, filename, 5)
